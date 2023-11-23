@@ -5,6 +5,7 @@ import Seller from './containers/seller/Seller.jsx'
 import Login from './containers/auth/login.jsx'
 import Register from './containers/auth/register.jsx'
 import Category from './containers/category/Category.jsx'
+import CategoryB from './containers/category/CategoryB.jsx'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path='/auth/register' element={<Register />} />
 
         <Route exact path='/category' element={<Category/>} />
+        <Route exact path='/category/:id' element={<CategoryB/>} />
       </Routes>
     </>
   )
