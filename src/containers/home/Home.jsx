@@ -14,7 +14,7 @@ export default function Home() {
   const [isinsearch, setisinserch] = useState(false)
   return (
     <div>
-       <Header isloggedorauth={'logged'} />
+       <Header isloggedorauth={'logged'} active={'home'} />
        <div style={{marginTop: '6em'}}>
          <Hero opensearch={()=> (setisinserch(true),console.log('working'))} />
          <Heroswiper />

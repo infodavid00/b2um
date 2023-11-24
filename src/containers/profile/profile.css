@@ -1,0 +1,71 @@
+
+.profile-content-body {
+  width:92%;
+  margin:auto;
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+}
+
+.profile-profilepic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 3em;
+}
+
+.profile-sellbtn {
+  border:none;
+  padding: 15px 1.5em;
+  border-radius: 5px;
+  outline: none;
+  display:block;
+  margin:auto;
+  font-weight: 700;
+  color:dodgerblue;
+}
+
+.profile-meta-body {
+  background-color: #e9e9e9;
+  padding: 0.7em 0.7em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  border-radius: 10px;
+}
+.profile-meta-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  border:none;
+  padding: 15px 1.5em;
+  border-radius: 5px;
+  outline: none;
+  display:block;
+  margin:auto;
+  font-weight: 700;
+  background-color:dodgerblue;
+  color:white;
+  float: right;
+  margin-top: 2em;
+}
+
+@media (min-width:760px) {
+ .profile-content-body  {
+  width:70%;
+  margin:auto;
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+}  
+}

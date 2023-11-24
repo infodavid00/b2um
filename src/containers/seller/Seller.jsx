@@ -17,7 +17,7 @@ export default function Seller() {
            <div>
            <h1>Start selling on B2UM today</h1>
            <p>We've helped thousands of gamers earn money and now it's your turn.</p>
-           <button>Register now</button>
+           <button onClick={()=> window.location.href = '/auth/register'}>Register now</button>
            </div>
            <img className='hero-poster' src={img1} />
          </div>
@@ -47,3 +47,5 @@ export default function Seller() {
     </div>
   )
 }
+
+// 

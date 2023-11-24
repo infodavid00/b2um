@@ -30,10 +30,10 @@
 }
 .auth-trigger {
   width: 100%;
-  border: 1px solid #ff5733;;
+  border: 1px solid rgba(150,150,250,1);
   outline:none;
   padding:14px;
-  background-color: #ff5733;
+  background-color: rgba(150,150,250,1);
   color:white;
   border-radius: 7px;
   font-weight: 700;

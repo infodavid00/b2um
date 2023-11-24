@@ -1,15 +1,15 @@
 
 import React from 'react'
 import './Search.css'
-import { Search, X } from 'react-feather'
+import { PlayCircle, Search, X } from 'react-feather'
 
-export default function Searchmain ({close}) {
+export default function Searchmain ({close, placeholder}) {
   return (
     <div className='search-tint-body'>
      <button className='exit' onClick={close}><X strokeWidth={1.3}/></button>
 
      <div className='search'>
-      <input type='text' placeholder={'search stuffs in BTUM'} />
+      <input type='text' placeholder={placeholder ??'search stuffs in BTUM'} />
       <button><Search /></button>
      </div>
      <div className='search search-res'>

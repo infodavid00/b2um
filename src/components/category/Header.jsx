@@ -14,7 +14,7 @@ export default function Header({title}) {
     <>
     <div className='header-container' style={{justifyContent:'space-between',...style}}>
       {/* <Logo /> */}
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center'}} onClick={()=> window.history.back()}>
        <ChevronLeft />
        <span>{title}</span>
       </div>

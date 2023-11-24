@@ -6,7 +6,7 @@ import './auth.css'
 import Se from './se.jsx'
 
 
-function Flow1() {
+function Flow1({continuesignup}) {
   return (
        <div className='authcont'>
        <h2>Create an account</h2>
@@ -21,13 +21,13 @@ function Flow1() {
          <input type='text' className='auth-input' placeholder='First name' />
          <input type='text' className='auth-input' placeholder='Last name'/> 
        </div> 
-       <button className='auth-trigger'>Create an account</button>
+       <button onClick={continuesignup} className='auth-trigger'>Create an account</button>
  
        <p style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center',width:'100%',padding:0}}>
        <span style={{cursor:'pointer', fontWeight:600, color:'rgba(10,10,10,0.7)'}}>Or</span></p> 
        <Se />
        <p style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center',width:'100%',padding:0}}>
-       <span style={{cursor:'pointer', fontWeight:600, color:'rgba(10,10,10,0.7)'}}>Already have an account? Login</span></p> 
+       <span onClick={()=> window.location.href = '/auth/login'} style={{cursor:'pointer', fontWeight:600, color:'rgba(10,10,10,0.7)'}}>Already have an account? Login</span></p> 
 
      </div>
   )
@@ -63,11 +63,11 @@ function Flow2() {
 
 
 export default function Register() {
-  const flow = 1
+  const [flow, setFlow] =  useState(1)
   return (
     <div className='authbody'>
      <Header hidefooter={true} isloggedorauth={true} />
-     {flow === 1  ? <Flow1 /> : flow === 2  ? <Flow2 /> : null}
+     {flow === 1  ? <Flow1 continuesignup={()=> setFlow(2)} /> : flow === 2  ? <Flow2 /> : null}
      <Footer />
     </div>
   )

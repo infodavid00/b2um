@@ -1,13 +1,10 @@
 
+import data from '../../assets/b2um copycc copy.png'
 let style = {
-  fontSize: '28px',
-  fontWeight: 900,
-  color: 'transparent',
-  backgroundImage: 'linear-gradient(45deg, #ff5733 , rgba(0,0,0,0.8))', 
-  backgroundClip: 'text',
-  WebkitBackgroundClip: 'text'
+  width:'70px',
+  height: 'auto'
 }
 
 export default function Logo() {
-  return <span style={style}>B2UM</span>
+  return <img src={data} style={style} onClick={()=> window.location.href = '/'} />
 } 

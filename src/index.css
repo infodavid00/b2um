@@ -32,5 +32,5 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background-color: tomato;
+  background-color: rgba(150,150,250,1);
 }
