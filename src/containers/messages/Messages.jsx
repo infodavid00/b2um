@@ -4,6 +4,7 @@ import Header from "../../components/common/Header";
 import SearchH from '../../components/category/Search.jsx'
 import './messages.css'
 import data from '../../datasets/messages.json'
+import {Link} from 'react-router-dom'
 
 function Lists({data}) {
   function showactive() {
@@ -11,7 +12,7 @@ function Lists({data}) {
     return i
   }
   return (
-   <div className='messages-view1-list-cont'  onClick={()=> window.location.href = '/messages/'+  data.user}>
+   <Link className='messages-view1-list-cont' to={'/messages/'+  data.user}>
    <div style={{display:'flex', flexDirection:'row',gap:'0.8em', alignItems:'center'}}>
     <div><img src={data.poster} /></div>
     <div style={{display:'flex', flexDirection:'column',gap:'0px', alignItems:'flex-start', justifyContent:'center'}}>
@@ -20,7 +21,7 @@ function Lists({data}) {
     </div>
     </div>
     <span className='mv1-l-content'>{data.time}</span>
-   </div>
+   </Link>
   )
 }
 

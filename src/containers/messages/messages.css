@@ -12,6 +12,7 @@
   align-items: center;
   margin-bottom: 0.9em;
   cursor: pointer;
+  text-decoration: none;
 }
 .messages-view1-list-cont:hover {
   background-color: #f1f1f1;

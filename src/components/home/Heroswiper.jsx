@@ -3,44 +3,54 @@ import React from 'react'
 import {Video, User, Package, CreditCard , Plus, Disc,Pocket,
 Command,Users} from 'react-feather'
 import './Heroswiper.css'
+import { Link } from 'react-router-dom'
 
 export default function Heroswiper() {
   return (
     <div className='heroswippercontainer'>
-     <div onClick={()=> window.location.href = '/category/game-topup'}>
-       <button style={{backgroundColor:'rgba(0,180,0,0.8'}}><Plus /></button>
+     <div>
+       <button style={{backgroundColor:'rgba(0,180,0,0.8'}}><Link style={{color:'white'}} to='/category/game-topup'>
+       <Plus /></Link></button>
        <span>Game topup</span>
      </div>
-     <div onClick={()=> window.location.href = '/category/gift-cards'}>
-       <button style={{backgroundColor:'rgba(120,10,200,0.8'}}><CreditCard /></button>
+     <div >
+       <button style={{backgroundColor:'rgba(120,10,200,0.8'}}><Link style={{color:'white'}} to='/category/gift-cards'>
+       <CreditCard /></Link></button>
        <span>Gift cards</span>
      </div>
-     <div onClick={()=> window.location.href = '/category/video-game'}>
-       <button style={{backgroundColor:'rgba(120,10,20,0.8'}}><Video /></button>
+     <div>
+       <button style={{backgroundColor:'rgba(120,10,20,0.8'}}><Link style={{color:'white'}} to='/category/video-game'>
+       <Video /></Link></button>
        <span>Video games</span>
      </div>
-     <div onClick={()=> window.location.href = '/category/software'}>
-       <button style={{backgroundColor:'rgba(22,120,20,0.8'}}><Command /></button>
+     <div>
+       <button style={{backgroundColor:'rgba(22,120,20,0.8'}}><Link style={{color:'white'}} to='/category/software'>
+       <Command /></Link></button>
        <span>Software</span>
      </div>
-     <div onClick={()=> window.location.href = '/category/game-coins'}>
-       <button style={{backgroundColor:'rgba(250,10,30,0.8'}}><Pocket /></button>
+     <div>
+       <button style={{backgroundColor:'rgba(250,10,30,0.8'}}><Link style={{color:'white'}} to='/category/game-coins'>
+       <Pocket /></Link></button>
        <span>Game coins</span>
      </div>
-     <div onClick={()=> window.location.href = '/category/items'}>
-       <button style={{backgroundColor:'rgba(200,130,200,0.8'}}><Package /></button>
+     <div>
+       <button style={{backgroundColor:'rgba(200,130,200,0.8'}}><Link style={{color:'white'}} to='/category/items'>
+       <Package /></Link></button>
        <span>Items</span>
      </div>
-     <div onClick={()=> window.location.href = '/category/accounts'}>
-       <button style={{backgroundColor:'rgba(220,200,20,0.8'}}><User /></button>
+     <div>
+       <button style={{backgroundColor:'rgba(220,200,20,0.8'}}><Link style={{color:'white'}} to='/category/accounts'>
+       <User /></Link></button>
        <span>Accounts</span>
      </div>
      <div onClick={()=> window.location.href = '/auth/register'}>
-       <button style={{backgroundColor:'rgba(120,120,120,0.8'}}><Users /></button>
+       <button style={{backgroundColor:'rgba(120,120,120,0.8'}}><Link style={{color:'white'}}>
+       <Users /></Link></button>
        <span>Game pal</span>
      </div>
      <div onClick={()=> window.location.href = '/auth/register'}>
-       <button style={{backgroundColor:'rgba(20,100,250,0.8'}}><Disc /></button>
+       <button style={{backgroundColor:'rgba(20,100,250,0.8'}}><Link style={{color:'white'}}>
+       <Disc /></Link></button>
        <span>Coaching</span>
      </div>
     </div>

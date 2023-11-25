@@ -14,10 +14,12 @@
 .app-footer-b-container ol {
   display: inline-block;
   padding:10px;
+   /* font-family: 'nunitobold';  */
 }
 .app-footer-container ol li , .app-footer-container li {
   list-style-type: none;
   padding:10px;
+  font-family: 'nunito'; 
 }
 .app-footer-container ol li a, .app-footer-container li a {
   text-decoration: none;
@@ -26,6 +28,7 @@
 .app-footer-container ol li a:hover, .app-footer-container li a:hover {
   font-weight: 700;
   transition: 0.1s ease;
+  font-family: 'nunitobold';
 }
 .app-footer-container ol li:first-child {
   font-weight: 700;

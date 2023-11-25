@@ -4,7 +4,7 @@ import Header from '../../components/category/Header'
 import Footer from '../../components/common/Footer'
 import './Category.css'
 import { Minus, Plus } from 'react-feather'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 export default function CategoryB() {
   const {id} = useParams()
@@ -24,7 +24,7 @@ export default function CategoryB() {
          </div>
          <div className='category-b-p-cont'>
            <button style={{backgroundColor:'rgb(150,150,250)', fontFamily:700,color:'white'}}>Purchase now</button>
-           <button onClick={() => window.location.href = '/messages/'+'Offgamers12'}>Contact seller</button>
+           <button ><Link style={{textDecoration:'none'}} to={'/messages/'+'Offgamers12'}>Contact seller</Link></button>
          </div>
 
          <div className='category-infoholder-body-forlargescreens'>

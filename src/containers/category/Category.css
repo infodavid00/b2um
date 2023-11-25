@@ -21,6 +21,7 @@
   /* margin-bottom: 3em; */
   /* background-color: red; */
   cursor: pointer;
+  text-decoration: none;
 }
 
 .category-card-img {

@@ -5,19 +5,19 @@ import Footer from '../../components/common/Footer.jsx'
 import SearchH from '../../components/category/Search.jsx'
 import data from '../../datasets/categories.json'
 import './Category.css'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 
 function Cards({data, category}) {
  return (
-  <div className='category-card-container' onClick={()=> window.location.href=`/category/${category}/${data.title}`}>
+  <Link  className='category-card-container' to={`/category/${category}/${data.title}`}>
     <img src={data.poster} className='category-card-img'/>
     <h3 className='category-card-header' >{data.title}</h3>
     <div style={{display:'flex',flexDirection:'row',gap:'1em'}}>
       <button className='category-card-offers'>{data.offers} offers</button>
       <button style={{backgroundColor:'transparent',border:'none',outline:'none',fontSize:'15px',fontWeight:700,color:'rgba(10,10,10,0.5)'}}>selling for {data.from} usd</button>
     </div>
-  </div>
+  </Link>
  )
 }
 

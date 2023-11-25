@@ -4,6 +4,7 @@
  width: 49%;
  height: 170px;
  color: white;
+ text-decoration: none;
 }
 .card-cont {
  background-color: #e1e1e1;

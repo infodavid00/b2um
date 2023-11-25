@@ -8,8 +8,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+@font-face {
+  font-family:'nunito' ;
+  font-style: normal;
+  font-weight: 500;
+  src: local('nunito'),local('Nunito-Regular'),url(./assets/Nunito-Regular.ttf)format('truetype');
+}
+@font-face {
+  font-family:'nunitobold' ;
+  font-style: normal;
+  font-weight: 500;
+  src: local('nunitobold'),local('Nunito-Bold'),url(./assets/Nunito-Bold.ttf)format('truetype');
+}
+
 * {
   box-sizing: border-box;
+  /* background-color: #f1f1f1; */
 }
 body {
   margin: 0;
@@ -34,3 +50,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: rgba(150,150,250,1);
 }
+
+/*  font-family: 'nunito', sans-serif; */
+/*  font-family: 'nunitobold', sans-serif; */

@@ -19,8 +19,12 @@
  padding: 10px;
  color:  rgba(150,150,150,0.2);
  opacity: 0.5;
-}
+ font-family: 'nunitobold';
+} 
 
+.home-h-search input::placeholder {
+ font-family: 'nunitobold';
+}
 .home-h-search button {
  background-color: rgba(150,150,250,1);
  color: white;

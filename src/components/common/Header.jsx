@@ -2,6 +2,7 @@
 import './Header.css'
 import Logo from './Logo.jsx'
 import { Bell, Home, MessageCircle } from 'react-feather'
+import {Link} from 'react-router-dom'
 
 function Footer({isloggedorauth, active}) {
   const tabstyle = {
@@ -13,28 +14,30 @@ function Footer({isloggedorauth, active}) {
     justifyContent: 'center',
     alignItems:'center',
     color: 'rgba(10,10,10,0.8)',
-    fontWeight:500
+    textDecoration:'none',
+    fontSize:'14.5px',
+    fontFamily: 'nunito'
   }
   return (
    <div className='header-container header-footer'>
     {isloggedorauth === 'logged' ? (
       <>
-      <button onClick={()=> window.location.href = '/'} style={{...tabstyle, color:active === 'home' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' }}>
-        <Home strokeWidth={1.2} />
+      <Link to='/' style={{...tabstyle, color:active === 'home' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' }}>
+        <Home strokeWidth={1} />
         <span>Home</span>
-      </button>
-      <button onClick={()=> window.location.href = '/messages'}  style={{...tabstyle, color:active === 'chat' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' }} >
-        <MessageCircle strokeWidth={1.2} />
+      </Link>
+      <Link to='/messages'  style={{...tabstyle, color:active === 'chat' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' }} >
+        <MessageCircle strokeWidth={1} />
         <span>Chat</span>
-      </button>
-      <button onClick={()=> window.location.href = '/notification'} style={{...tabstyle, color:active === 'notification' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' }}>
-        <Bell strokeWidth={1.2} />
+      </Link>
+      <Link to='/notification' style={{...tabstyle, color:active === 'notification' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' }}>
+        <Bell strokeWidth={1} />
         <span>Notification</span>
-      </button>
-      <button onClick={()=> window.location.href = '/profile'} style={{...tabstyle, color:active === 'profile' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' }} >
+      </Link>
+      <Link to='/profile' style={{...tabstyle, color:active === 'profile' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' }} >
         <button style={{backgroundColor:'rgba(150,150,250,1)',border:'none',outline:'none',width:'25px',color:'white', height:'25px',borderRadius:'50%'}}>B</button>
         <span>Profile</span>
-      </button>
+      </Link>
       </>
     ) : (
       <>
@@ -55,14 +58,14 @@ export default function Header({hidefooter, isloggedorauth, active}) {
       {isloggedorauth  === true ? null : isloggedorauth === 'logged' ?
       (
         <div className='header-for-larges'>
-        <button className='header-btn htbn-p' style={{border:'none', fontSize:'15px', color:active === 'home' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' , fontWeight:600}} onClick={()=> window.location.href = '/'}>
-          Home</button>
-        <button className='header-btn htbtn' style={{border:'none', fontSize:'15px', color:active === 'chat' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' , fontWeight:600}} onClick={()=> window.location.href = '/messages'}>
-          Chat</button>
-        <button className='header-btn htbn-p' style={{border:'none', fontSize:'15px', color:active === 'notification' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' , fontWeight:600}} onClick={()=> window.location.href = '/notification'}>
-          Notification</button>
-        <button className='header-btn htbtn' style={{border:'none', fontSize:'15px', color:active === 'profile' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' , fontWeight:600}} onClick={()=> window.location.href = '/profile'}>
-          Profile</button>
+        <button className='header-btn htbn-p' style={{border:'none',fontWeight:600}}>
+          <Link to='/' style={{fontSize:'15px', color:active === 'home' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' , textDecoration:'none'}}>Home</Link></button>
+         <button className='header-btn htbtn' style={{border:'none', fontWeight:600}}>
+          <Link to='/messages' style={{fontSize:'15px', color:active === 'chat' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' , textDecoration:'none'}}>Chat</Link></button>
+        <button className='header-btn htbn-p' style={{border:'none', fontSize:'15px', color:active === 'notification' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' , fontWeight:600}}>
+          <Link to='/notification' style={{fontSize:'15px', color:active === 'notification' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)' , textDecoration:'none'}}>Notification</Link></button>
+        <button className='header-btn htbtn' style={{border:'none',  fontWeight:600}}>
+          <Link to='/profile' style={{fontSize:'15px', color:active === 'profile' ? 'rgba(150,150,250,1)' : 'rgba(10,10,10,0.8)', textDecoration:'none' }}>Profile</Link></button>
        </div>
       ) :(
         <div className='header-for-larges'>
