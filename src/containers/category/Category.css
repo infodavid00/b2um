@@ -22,12 +22,17 @@
   /* background-color: red; */
   cursor: pointer;
   text-decoration: none;
+  /* background-color: #2AFFE2; */
+}
+.category-card-container:hover .category-card-header{
+  color:#2AFFE2;
 }
 
 .category-card-img {
   background-color: #f1f1f1;
   width: 200px;
   height: 200px;
+  /* border: 3px solid #2AFFE2; */
 }
 
 .category-card-header {
@@ -40,6 +45,7 @@
   border: none;
   background-color: #e5e5e5;
   border-radius: 7px;
+  font-family: nunito;
   /* cursor: ; */
 }
 
@@ -80,6 +86,7 @@
   outline:none;
   font-weight: 500;
   border-radius: 7px;
+  font-family: 'nunitobold';
 }
 
 .category-infoholder-body {
@@ -100,13 +107,16 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-family: 'nunitobold';
 }
 .cihic-t {
   color: rgba(10,10,10,0.7);
   font-weight: 700;
+  font-family: nunitobold;
 }
 .cihic-t2 {
   font-weight: 500;
+  font-family: nunito;
 }
 .category-b-qnty {
   width: 250px;

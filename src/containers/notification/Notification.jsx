@@ -8,13 +8,13 @@ import { Trash } from 'react-feather';
 function Lists({data}) {
   return (
     <div className='notification-body'>
-    <h3>{data.header}  <span style={{fontSize:'15px', color:'rgba(0,0,0,0.4)'}}>Loadmore</span></h3>
+    <h3>{data.header}<span style={{fontSize:'15px'}} id='link'>Loadmore</span></h3>
     <div style={{display:'flex',flexDirection:'column', alignContent:'center',gap:'0.7em'}}>
      {data.data.map((element,index)=> (
        <div key={index} className='notification-list-cont'>
-        <Trash strokeWidth={1.4} />
+        <Trash strokeWidth={1} />
         <div style={{display:'flex',flexDirection:'column',justifyContent:'flex-start', alignContent:'center',gap:'0.4em'}}>
-          <span>{element.title}</span>
+          <span style={{fontFamily:'nunitobold'}}>{element.title}</span>
           <span>{element.id}</span>
         </div>
         <span>${element.price}</span>

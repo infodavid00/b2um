@@ -2,6 +2,7 @@
 import React from 'react'
 import '../../assets/styles/home.css'
 import SearchH from './Search.jsx'
+import {Link} from 'react-router-dom'
 
 export default function Hero({opensearch}) {
   return (
@@ -12,8 +13,8 @@ export default function Hero({opensearch}) {
          <h2 className='home-main-hero-h'>Start selling gift cards now!</h2>
          <p className='home-main-hero-p'>Trading made easy with BTUM, your Number 1 choice.</p>
          <div className='home-main-hero-cta-section'>
-          <button onClick={()=> window.location.href = '/seller'}>Start Selling</button>
-          <button id='h-m-h-c-s-b2' onClick={()=> window.location.href = '/auth/register'}>Find great deals</button>
+          <button><Link to='/seller' style={{textDecoration:'none'}} id='link'>Start Selling</Link></button>
+          <button id='h-m-h-c-s-b2'><Link to='/auth/register' style={{textDecoration:'none'}} id='link'>Find great deals</Link></button>
          </div>
         </div>
         <img src='https://www.g2g.com/img/giftcards-img.d9c7f715.webp' className='home-hero-poster' />

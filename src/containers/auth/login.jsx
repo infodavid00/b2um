@@ -4,6 +4,7 @@ import Header from '../../components/common/Header.jsx'
 import Footer from '../../components/common/Footer.jsx'
 import './auth.css'
 import Se from './se.jsx'
+import {Link} from 'react-router-dom'
 
 export default function Login() {
   return (
@@ -14,7 +15,7 @@ export default function Login() {
        <input type='email' className='auth-input' placeholder='Email or Mobile number'/>
        <input type='password' className='auth-input' placeholder='Password' />
        <p style={{display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems:'center',width:'100%',padding:0}}>
-       <span onClick={()=> window.location.href = '/auth/fp'} style={{cursor:'pointer', fontWeight:600, color:'rgba(10,10,10,0.7)'}}>Forgotten password?</span></p>
+       <Link to='/auth/fp'  className='already-h-a-n'>Forgotten password?</Link></p>
        <button className='auth-trigger'>Login</button>
        <p style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center',width:'100%',padding:0}}>
        <span style={{cursor:'pointer', fontWeight:600, color:'rgba(10,10,10,0.7)'}}>Or</span></p> 
@@ -22,7 +23,7 @@ export default function Login() {
        <Se />
 
        <p style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center',width:'100%',padding:0}}>
-       <span onClick={()=> window.location.href = '/auth/register'} style={{cursor:'pointer', fontWeight:600, color:'rgba(10,10,10,0.7)'}}>New to B2UM? Sign up</span></p> 
+       <Link to='/auth/register'  className='already-h-a-n'>New to B2UM? Sign up</Link></p> 
 
      </div>
      <Footer />

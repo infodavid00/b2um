@@ -23,8 +23,8 @@ export default function CategoryB() {
            <button><Plus /></button>
          </div>
          <div className='category-b-p-cont'>
-           <button style={{backgroundColor:'rgb(150,150,250)', fontFamily:700,color:'white'}}>Purchase now</button>
-           <button ><Link style={{textDecoration:'none'}} to={'/messages/'+'Offgamers12'}>Contact seller</Link></button>
+           <button style={{backgroundColor:'#2AFFE2', fontFamily:700,border:'1px solid rgba(10,10,10,0.4)'}}>Purchase now</button>
+           <button ><Link id='link' style={{textDecoration:'none'}} to={'/messages/'+'Offgamers12'}>Contact seller</Link></button>
          </div>
 
          <div className='category-infoholder-body-forlargescreens'>

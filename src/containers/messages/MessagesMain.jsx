@@ -9,8 +9,8 @@ import { useParams } from 'react-router-dom'
 
 function Lists({data}) {
   let chatbody = {
-    backgroundColor : data.whoami === 'you' ? 'dodgerblue' : '#e9e9e9',
-    color : data.whoami === 'you' ? 'white' : 'rgba(0,0,0,0.8)'
+    backgroundColor : data.whoami === 'you' ? '#2AFFE2' : 'white',
+    color : data.whoami === 'you' ? 'rgba(0,0,0,0.7)' : 'rgba(0,0,0,0.8)'
   }
   return (
    <div className='messages-view2-chat-body' style={{justifyContent:data.whoami === 'you' ? 'flex-end' : 'flex-start'}}>

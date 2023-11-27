@@ -6,6 +6,7 @@ import './Seller.css'
 import PaymentMethod from "../../components/home/PaymentMethod.jsx";
 import About from "../../components/home/About.jsx";
 import { img1, img2, img3, img4 } from './images.jsx'
+import {Link} from 'react-router-dom'
 
 export default function Seller() {
   return (
@@ -17,7 +18,7 @@ export default function Seller() {
            <div>
            <h1>Start selling on B2UM today</h1>
            <p>We've helped thousands of gamers earn money and now it's your turn.</p>
-           <button onClick={()=> window.location.href = '/auth/register'}>Register now</button>
+           <button><Link to={'/auth/register'} style={{textDecoration:'none'}} id='link'>Register now</Link></button>
            </div>
            <img className='hero-poster' src={img1} />
          </div>

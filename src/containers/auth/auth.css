@@ -9,6 +9,9 @@
   align-items: center;
   overflow: scroll; */
 }
+.authbody h2 {
+  font-family: 'nunitobold';
+}
 .authcont {
   display: flex;
   flex-direction: column;
@@ -22,21 +25,24 @@
 .auth-input{
   width: 100%;
   border: 1px solid rgba(10,10,10,0.4);
-  outline:none;
+  outline-color: #2AFFE2;
   padding:14px;
   background-color: #f1f1f1;
   border-radius: 7px;
   font-size: 15px;
 }
+
 .auth-trigger {
   width: 100%;
-  border: 1px solid rgba(150,150,250,1);
+  border: none;
   outline:none;
-  padding:14px;
-  background-color: rgba(150,150,250,1);
-  color:white;
+  padding:15px;
+  background-color:  #2AFFE2;
+  color: rgba(10,10,10,0.7);
+  border:1px solid rgba(10,10,10,0.7);
   border-radius: 7px;
   font-weight: 700;
+  font-family: 'nunitobold';
 }
 
 .auth-continuewith {
@@ -44,6 +50,8 @@
   color:rgba(10,10,10,0.7);
   display:flex;
   flex-direction: row;
+  /* justify-content: center; */
+  gap: 0.4em;
   justify-content: space-between;
   border: 1px solid rgba(10,10,10,0.4);
   width: 100%;
@@ -51,6 +59,37 @@
   border-radius: 6px;
   cursor: pointer;
   align-items: center;
+}
+.auth-trigger:hover{
+  color: white;
+}
+.auth-continuewith:hover {
+  background-color:  #2AFFE2;
+  color: rgba(10,10,10,0.7);
+  border:1px solid rgba(10,10,10,0.7);
+}
+
+.acw-t {
+  width: 50%;
+  text-align: center;
+  /* background-color: red; */
+}
+.acw-l {
+  width: 25%;
+  /* background-color: red; */
+  display:flex;
+  /* flex-direction: ; */
+  justify-content: center;
+  align-items: center;
+}
+.already-h-a-n {
+  cursor:pointer; 
+  font-weight:600;
+  color: rgba(10,10,10,0.7);
+  text-decoration:none;
+}
+.already-h-a-n:hover {
+  color:  #2AFFE2;
 }
 
 

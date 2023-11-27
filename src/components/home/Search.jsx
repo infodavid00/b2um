@@ -7,7 +7,7 @@ export default function SearchH({open, placeholder}) {
   return (
     <div className='home-h-search' onClick={open}>
       <input type='text' placeholder={placeholder ?? 'search stuffs in BTUM'} onClick={open}/>
-      <button style={{backgroundColor:'rgba(150,150,250,1)'}}><Search /></button>
+      <button style={{backgroundColor:'#2AFFE2'}}><Search /></button>
     </div>
   )
 }

@@ -32,12 +32,10 @@ export default function Messages() {
       <div style={{marginTop: '6em'}} className='messagess-view1-body'>
        <h2 style={{color:'rgba(0,0,0,0.8)'}}>Messages</h2>
        <SearchH placeholder={'search messages'} />
-       <h4 style={{color:'dodgerblue'}}>All messages</h4>
+       <h4 style={{color:'rgba(0,0,0,0.8)',fontFamily:'nunitobold'}}>All messages</h4>
          {data.map((element,index) => <Lists  key={index} data={element} />)}
        <div>
-        
        </div>
-
       </div>
     </div>
   )

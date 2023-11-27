@@ -29,14 +29,14 @@
  padding: 15px;
  width:47%;
  border-radius: 7px;
- border: 2px solid rgba(150,150,250,1);
+ border: 2px solid #2AFFE2;
  background-color: transparent;
- color: rgba(150,150,250,1)
+
 }
 .htbtn-fill {
- background-color: rgba(150,150,250,1);
- color: white;
+ background-color:#2AFFE2;
  font-weight: 700;
+ border: 1px solid rgba(120,120,120,0.2);
 }
 .header-for-larges {
   display: none;
@@ -51,16 +51,16 @@
 .header-btn {
  padding: 9.3px;
  border-radius: 20px;
- border: 2px solid rgba(150,150,250,1);
+ border: 2px solid #2AFFE2;
  background-color: transparent;
- color: rgba(150,150,250,1);
+ /* color: rgba(150,150,250,1); */
  margin-left: 1em;
  font-family: 'nunitobold'; 
 }
 .htbtn-fill {
- background-color: rgba(150,150,250,1);
- color: white;
+ background-color:#2AFFE2;
  font-weight: 700;    
+  border: 1px solid rgba(120,120,120,0.2);
 }
 .htbn-p {
   padding-left: 2em;

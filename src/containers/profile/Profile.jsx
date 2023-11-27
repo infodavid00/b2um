@@ -2,6 +2,7 @@
 import React from 'react'
 import Header from "../../components/common/Header";
 import './profile.css'
+import {Link} from 'react-router-dom'
 
 export default function Profile() {
   return (
@@ -13,8 +14,8 @@ export default function Profile() {
 
        <div> 
          <h1 style={{textAlign:'center',color:'rbga(0,0,0,0.7)'}}>Buffalo Mania</h1>
-         <p style={{textAlign:'center',color:'rbga(0,0,0,0.8)',marginTop:'-1em'}}>User at Level 1</p>
-         <button className='profile-sellbtn' onClick={()=> window.location.href = '/seller'}>Start Selling</button>
+         <p style={{textAlign:'center',color:'rbga(0,0,0,0.8)',marginTop:'-1em',fontFamily: 'nunito'}}>User at Level 1</p>
+         <button className='profile-sellbtn'><Link to='/seller' style={{textDecoration:'none'}} id='link'>Start Selling</Link></button>
        </div>
 
        <div className='profile-content-body'>
@@ -30,7 +31,7 @@ export default function Profile() {
           </div>
            
           <div>
-             <button className='logout-btn' onClick={()=> window.location.href = '/'}>Logout</button>
+             <button className='logout-btn'><Link to='/' style={{textDecoration:'none'}} id='link'>Logout</Link></button>
           </div>
        </div>
     </div>

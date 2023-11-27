@@ -30,10 +30,16 @@
   padding: 13px;
   border-radius: 7px;
   border:none;
-  background-color: rgba(150,150,250,1);
   font-weight: 600;
   font-size: 15px;
-  color:white;
+  background-color:  #2AFFE2;
+  border:1px solid rgba(10,10,10,0.7);
+}
+#link {
+  color: rgba(10,10,10,0.7);
+}
+#link:hover {
+  color: #2AFFE2;
 }
 .hero-poster {
   width: 400px;

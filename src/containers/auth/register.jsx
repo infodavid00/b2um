@@ -4,6 +4,7 @@ import Header from '../../components/common/Header.jsx'
 import Footer from '../../components/common/Footer.jsx'
 import './auth.css'
 import Se from './se.jsx'
+import {Link} from 'react-router-dom'
 
 
 function Flow1({continuesignup}) {
@@ -27,7 +28,7 @@ function Flow1({continuesignup}) {
        <span style={{cursor:'pointer', fontWeight:600, color:'rgba(10,10,10,0.7)'}}>Or</span></p> 
        <Se />
        <p style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center',width:'100%',padding:0}}>
-       <span onClick={()=> window.location.href = '/auth/login'} style={{cursor:'pointer', fontWeight:600, color:'rgba(10,10,10,0.7)'}}>Already have an account? Login</span></p> 
+       <Link to={'/auth/login'} className='already-h-a-n'>Already have an account? Login</Link></p> 
 
      </div>
   )

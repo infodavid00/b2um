@@ -53,6 +53,6 @@
 }
 .heroswippercontainer::-webkit-scrollbar-thumb{
   width: 3px;
-  background-color: rgba(150,150,250,1);
+  background-color: #2AFFE2;
 }
 /*  */

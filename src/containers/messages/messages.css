@@ -13,9 +13,11 @@
   margin-bottom: 0.9em;
   cursor: pointer;
   text-decoration: none;
+  padding: 10px;
 }
 .messages-view1-list-cont:hover {
-  background-color: #f1f1f1;
+  background-color: #2AFFE2;
+  border-radius: 40px;
 }
 .messages-view1-list-cont img {
   width: 50px;
@@ -51,6 +53,7 @@
   border-bottom:1px solid rgba(150,150,150,0.2);
   box-shadow: 5px 5px 5px rgba(200,200,200,0.2);
   z-index: 1;
+  /* font-family: 'nunitobold'; */
 }
 
 .messagess-view2-footer-cont {
@@ -78,6 +81,8 @@
   border:none;
   outline:none;
   background-color: transparent;
+  font-family:'nunito';
+  resize: none;
 }
 
 
